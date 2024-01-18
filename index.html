@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-6qgZ9yphhZUEhwMJ4iAF/dT2w6Xgq7Ml7dRH8azDcmAXKe1H/dbe/1B7esvpva9kEgLLO1/yj/M9bgo36fX0Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Anna's Vanilla JS Clock App</title>
 </head>
 <body>
     <h1>What's the time?</h1>
-    <form>
-        <input type="search" placeholder="Enter a city"/>
-        <input type="submit">
-    </form>
-    <div>12:00:00</div>
+    <select class="select">
+        <option value="Europe/London">Europe/London</option>
+        <option value="Asia/Tokyo">Asia/Tokyo</option>
+        <option value="America/Los_Angeles">America/Los_Angeles</option>
+    </select>
+    <div class="city"></div>
+    <div class="time"></div>
+    <div class="date"></div>
+    <script src="src/index.js"></script>
 </body>
 </html>
