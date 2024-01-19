@@ -3,39 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="src/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-6qgZ9yphhZUEhwMJ4iAF/dT2w6Xgq7Ml7dRH8azDcmAXKe1H/dbe/1B7esvpva9kEgLLO1/yj/M9bgo36fX0Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
     <title>Anna's Vanilla JS Clock App</title>
 </head>
 <body>
-    <a href="/">
-        <h1>What's the time?</h1>
-    </a>
-    <img src="images/anna-logo.png" alt="">
-    <select class="select">
-        <option value="">Select a city...</option>
-        <option value="current">current</option>
-        <option value="Europe/London">London</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="America/Los_Angeles">Los Angeles</option>
-        <option value="Africa/Harare">Harare</option>
-    </select>
-
-    <div>
-        <div class="city"></div>
-        <div class="time"></div>
-        <div class="date"></div>
-    </div>
-
-    <div id="homeCities">
-        <div id="londonName">London EN</div>
-        <div id="londonTime"></div>
-        <div class="londonDate"></div>
-
-        <div id="harareName">Harare AF</div>
-        <div id="harareTime"></div>
-        <div class="harareDate"></div>
-    </div>
+    <div class="container">
+                
+                    <h1>City Time App</h1>
+                
+        <div class="main">
+            <select class="select">
+                <option value="">Select a city...</option>
+                <option value="current">Current Location</option>
+                <option value="Europe/London">London</option>
+                <option value="Asia/Tokyo">Tokyo</option>
+                <option value="America/Los_Angeles">Los Angeles</option>
+                <option value="Africa/Harare">Harare</option>
+            </select>
+           
+            <div>
+                <div class="city"></div>
+                <div class="time"></div>
+                <div class="date"></div>
+            </div>
+            <div id="homeCities">
+                <div class="homeCity">
+                    <div              id="londonName">London </div>
+                    <div id="londonTime"></div>
+                    <div id="londonDate"></div>
+                </div>
+                <div class="homeCity">
+                    <div id="harareName">Harare</div>
+                    <div id="harareTime"></div>
+                    <div 
+                    id="harareDate"></div>
+                </div>
+            </div>
+                </div>
+        </div>
+    <footer>
+        This projected was coded by <a href="https://github.com/annadowding">Anna Dowding</a>, is <a href="https://github.com/annadowding/vanilla-javascript-clock-app">open-sourced</a> and <a href="https://annadowding-vanilla-js-clock-app.netlify.app/">hosted on Netlify</a>.
+    </footer>
 
     <script src="src/index.js"></script>
 </body>

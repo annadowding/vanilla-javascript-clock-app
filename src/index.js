@@ -37,8 +37,8 @@ function homeDisplay() {
     let harareTime = moment().tz("Africa/Harare");
   let londonTimeElement = document.querySelector("#londonTime");
   let harareTimeElement = document.querySelector("#harareTime");
-  let londonDateElement=document.querySelector(".londonDate");
-  let harareDateElement=document.querySelector(".harareDate");
+  let londonDateElement=document.querySelector("#londonDate");
+  let harareDateElement=document.querySelector("#harareDate");
 
   londonTimeElement.innerHTML = moment()
     .tz("Europe/London")
@@ -55,4 +55,4 @@ selectElement.addEventListener("change", handleSearch);
 homeDisplay();
 
 
-// setInterval(homeDisplay, 1000);
+setInterval(homeDisplay, 1000);
