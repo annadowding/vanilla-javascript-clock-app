@@ -8,17 +8,35 @@
     <title>Anna's Vanilla JS Clock App</title>
 </head>
 <body>
-    <h1>What's the time?</h1>
+    <a href="/">
+        <h1>What's the time?</h1>
+    </a>
+    <img src="images/anna-logo.png" alt="">
     <select class="select">
+        <option value="">Select a city...</option>
         <option value="current">current</option>
         <option value="Europe/London">London</option>
         <option value="Asia/Tokyo">Tokyo</option>
         <option value="America/Los_Angeles">Los Angeles</option>
         <option value="Africa/Harare">Harare</option>
     </select>
-    <div class="city"></div>
-    <div class="time"></div>
-    <div class="date"></div>
+
+    <div>
+        <div class="city"></div>
+        <div class="time"></div>
+        <div class="date"></div>
+    </div>
+
+    <div id="homeCities">
+        <div id="londonName">London EN</div>
+        <div id="londonTime"></div>
+        <div class="londonDate"></div>
+
+        <div id="harareName">Harare AF</div>
+        <div id="harareTime"></div>
+        <div class="harareDate"></div>
+    </div>
+
     <script src="src/index.js"></script>
 </body>
 </html>
